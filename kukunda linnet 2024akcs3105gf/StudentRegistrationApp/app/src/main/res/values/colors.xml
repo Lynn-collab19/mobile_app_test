@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Academic Theme Palette -->
+    <color name="primaryColor">#1A237E</color> <!-- Deep Navy Blue -->
+    <color name="primaryLightColor">#534BAE</color>
+    <color name="primaryDarkColor">#000051</color>
+    <color name="secondaryColor">#FFC107</color> <!-- University Gold -->
+    <color name="secondaryLightColor">#FFF350</color>
+    <color name="secondaryDarkColor">#C79100</color>
+
+    <color name="backgroundColor">#F4F7F9</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+</resources>
