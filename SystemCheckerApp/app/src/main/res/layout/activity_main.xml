@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_symptom_checker"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="0dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Patient Information"
+                    android:textStyle="bold"
+                    android:textColor="#3949AB"
+                    android:layout_marginBottom="12dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_patient_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginBottom="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/patientName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_age"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/patientAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="0dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_select_symptoms"
+                    android:textStyle="bold"
+                    android:textColor="#3949AB"
+                    android:layout_marginBottom="8dp"/>
+
+                <CheckBox android:id="@+id/fever" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/symptom_fever"/>
+                <CheckBox android:id="@+id/cough" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/symptom_cough"/>
+                <CheckBox android:id="@+id/headache" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/symptom_headache"/>
+                <CheckBox android:id="@+id/stomachPain" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/symptom_stomach_pain"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_severity"
+                    android:textStyle="bold"
+                    android:textColor="#3949AB"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioGroup
+                    android:id="@+id/severityGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/mild" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/severity_mild"/>
+                    <RadioButton android:id="@+id/moderate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/severity_moderate"/>
+                    <RadioButton android:id="@+id/severe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/severity_severe"/>
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_submit"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#1A237E"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_summary"
+            android:textStyle="bold"
+            android:textColor="#3949AB"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#3949AB"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/default_summary"
+                android:textColor="#424242"
+                android:lineSpacingExtra="4sp"
+                android:minHeight="120dp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

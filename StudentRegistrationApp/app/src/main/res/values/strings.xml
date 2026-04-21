@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Student Registration App</string>
+    <string name="student_name">Student Name</string>
+    <string name="enter_name">Enter name</string>
+    <string name="age">Age</string>
+    <string name="class_level">Class Level</string>
+    <string name="parent_contact">Parent Contact</string>
+    <string name="submit">Submit</string>
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="registration_success">Student %1$s Registered Successfully!</string>
+    <string name="logo_description">School Logo</string>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Clinic Symptom Checker</string>
+    <string name="title_symptom_checker">Patient Symptom Checker</string>
+    <string name="hint_patient_name">Patient Name</string>
+    <string name="hint_age">Age</string>
+    <string name="label_select_symptoms">Select Symptoms:</string>
+    <string name="symptom_fever">Fever</string>
+    <string name="symptom_cough">Cough</string>
+    <string name="symptom_headache">Headache</string>
+    <string name="symptom_stomach_pain">Stomach Pain</string>
+    <string name="label_severity">Severity Level:</string>
+    <string name="severity_mild">Mild</string>
+    <string name="severity_moderate">Moderate</string>
+    <string name="severity_severe">Severe</string>
+    <string name="btn_submit">Submit Symptoms</string>
+    <string name="label_summary">Summary:</string>
+    <string name="default_summary">Summary will appear here</string>
+    <string name="validation_error">Please enter patient name and age</string>
+    <string name="summary_header">--- Patient Summary ---</string>
+</resources>
